@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- sticky navbar -->
+        <nav class="navbar">
+          <!-- left section -->
+          <div class="left">
+            <a href="#">Library System</a>
+          </div>
+          <!-- right section-->
+          <div class="right">
+            <ul>
+              <li><a href="#book-table">Books</a></li>
+              <li><a href="#register-form">Register</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </div>
+        </nav>
+    <!-- Creating a table -->
+        <div class="book-table" id="book-table">
+            <h3>Books</h3><br>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="table-2">
+                            <a href="#">Book Title 1</a><br>
+                            <table class="inner-table">
+                                <tr><td>Publication Date: 2000</td></tr>
+                                <tr><td>Page Count: 250</td></tr>
+                                <tr><td>ISBN: 123-4567890123</td></tr>
+                            </table>
+                        </td>
+                        <td>Author Name 1</td>
+                        <td>Genre 1</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="table-2">
+                            <a href="#">Book Title 2</a><br>
+                            <table class="inner-table">
+                                <tr><td>Publication Date: 2005</td></tr>
+                                <tr><td>Page Count: 300</td></tr>
+                                <tr><td>ISBN: 123-4567890456</td></tr>
+                            </table>
+                        </td>
+                        <td>Author Name 2</td>
+                        <td>Genre 2</td>
+                        <td>Not Available</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="table-2">
+                            <a href="#">Book Title 3</a><br>
+                            <table class="inner-table">
+                                <tr><td>Publication Date: 2010</td></tr>
+                                <tr><td>Page Count: 350</td></tr>
+                                <tr><td>ISBN: 123-4567890789</td></tr>
+                            </table>
+                        </td>
+                        <td>Author Name 3</td>
+                        <td>Genre 3</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td class="table-2">
+                          <a href="#">Book Title 4</a><br>
+                          <table class="inner-table">
+                              <tr><td>Publication Date: 2015</td></tr>
+                              <tr><td>Page Count: 400</td></tr>
+                              <tr><td>ISBN: 456-4567890789</td></tr>
+                          </table>
+                      </td>
+                      <td>Author Name 4</td>
+                      <td>Genre 4</td>
+                      <td>Not Available</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td class="table-2">
+                          <a href="#">Book Title 5</a><br>
+                          <table class="inner-table">
+                              <tr><td>Publication Date: 2020</td></tr>
+                              <tr><td>Page Count: 450</td></tr>
+                              <tr><td>ISBN: 456-1237890789</td></tr>
+                          </table>
+                      </td>
+                      <td>Author Name 5</td>
+                      <td>Genre 5</td>
+                      <td>Available</td>
+                    </tr>
+                </tbody>
+            </table> 
+        </div>
+    <!-- Creating a form -->
+        <div class="register-form" id="register-form">
+          <h3>Register</h3>
+          <form action="/action_page.php" method="get">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" required>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" required>
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="5" max="100" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="cpassword">Confirm Password:</label>
+            <input type="password" id="cpassword" name="cpassword" required>
+            <button>Register</button>
+          </form>
+        </div>
+       
+      </div>
+    </div>
+  </body>
+</html>

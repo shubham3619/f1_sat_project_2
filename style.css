@@ -1,0 +1,111 @@
+/* universal selector */
+* {
+    margin:0px;
+    padding: 0px;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.body {
+    background-color:gray;
+}
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 40px;
+    align-items: center;
+    position: sticky;
+    top:0px;
+}
+.left {
+    margin-left: 30px;
+}
+.left a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+/* hover iffect */
+.left a:hover {
+    color:lightblue;
+    font-weight: bold;
+}
+.right ul{
+    display: flex;
+    margin-right: 25px;
+}
+.right ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+.right ul li a{ 
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+/* hover iffect */
+.right ul li a:hover {
+    color:lightblue;
+    font-weight: bold;
+} 
+/* table */
+table, tr, td, th {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.book-table tr, td, th {
+    padding: 6px;
+    background-color: white;
+    width: 130px;
+        font-size: 10px;
+}
+.book-table {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 24px;
+    background-color: white;
+    box-shadow: 10px 12px 21px -4px grey;
+}
+th {
+    text-align: left;
+}
+table.inner-table {
+    margin-top: 2px;
+    margin-bottom: -4px;
+} 
+
+
+/* form */
+
+.register-form {
+    border-radius: 5px;
+    padding: 10px;
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 53px;
+    box-shadow: 10px 12px 21px -4px grey;
+}
+form {
+    width: 100%;
+    display: grid;
+    margin-top: 12px;
+}
+input {
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid lightgray;
+}
+input:hover {
+    border: 2px solid lightblue;
+}
+button {
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
